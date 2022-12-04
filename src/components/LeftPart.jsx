@@ -81,8 +81,12 @@ const LeftPart = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-items-start space-x-6 ml-1 p-5 items-center  hover:text-[#E74694] fill-current">
-        <svg
+      <div className="flex justify-items-start space-x-4 ml-1 p-5 items-center  hover:text-[#E74694] fill-current">
+        
+        <div className="w-full -mb-5">
+          <div className="flex justify-between">
+            <div className="flex justify-center items-center gap-x-5 " onClick={() => setShow(!show)}>
+            <svg
           className="svg-icon h-5 w-5"
           viewBox="0 0 1024 1024"
           version="1.1"
@@ -94,6 +98,37 @@ const LeftPart = () => {
         <a href="#" className="text-xl">
           Categories
         </a>
+            <div>
+            <svg 
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              className="w-6 h-6 mt-1 ml-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+            </div>
+            </div>
+            
+          </div>
+          <div className="ml-10 p-3">
+            {show && (
+              <div>
+                <Link to="/categoriesdetails">Categories Details</Link>
+                <br />
+                <Link to="/categoryadd">Category Add</Link>
+                <br />
+                <Link to="/categoryedit" >Category Edit</Link>
+              </div>
+            )}
+          </div>
+        </div>
       </div>
       <div className="flex justify-items-start space-x-6 ml-0.5 p-5 items-center hover:text-[#E74694] fill-current">
         <svg
@@ -144,6 +179,9 @@ const LeftPart = () => {
           Accounts
         </a>
       </div>
+      
+      
+
     </div>
   );
 };

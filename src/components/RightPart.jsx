@@ -6,6 +6,7 @@ const RightPart = () => {
     <div className="mt-10">
       <NavBar/>
       <Hero/>
+      
     </div>
   );
 };

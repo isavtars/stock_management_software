@@ -100,6 +100,7 @@ const NavBar = () => {
             <div className="font-primaryText ">
               <h1 className="font-bold cursor-pointer">Bishal Pariyar</h1>
               <h6>Admin Profile</h6>
+              
             </div>
 
             <div className="flex items-center ">
